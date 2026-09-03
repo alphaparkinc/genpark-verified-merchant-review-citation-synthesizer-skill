@@ -1,0 +1,39 @@
+{
+  "name": "genpark-verified-merchant-review-citation-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Verified merchant review citation synthesizer aggregating verified customer feedback, pros/cons, and grounded source quotes.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "agent-commerce",
+  "tags": [
+    "perplexity-shopping",
+    "review-synthesizer",
+    "grounded-citations",
+    "product-reviews",
+    "sentiment-summary"
+  ],
+  "inputs": {
+    "product_query": {
+      "type": "string"
+    },
+    "min_verified_reviews_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "review_synthesis_id": {
+      "type": "string"
+    },
+    "consensus_sentiment_score": {
+      "type": "number"
+    },
+    "pros_highlights": {
+      "type": "array"
+    },
+    "synthesis_report_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
